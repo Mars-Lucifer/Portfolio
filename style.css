@@ -103,7 +103,7 @@ body {
 	height: 40%;
 	width: 110%;
 	max-width: 66vh;
-	margin-left: 30%;
+	margin-right: 30%;
 
 	animation-name: ani_b2;
 	animation-duration: 5s;
@@ -126,11 +126,11 @@ body {
 }
 
 @keyframes ani_b2 {
-	0% {width: 110%;margin-left: 30%;}
-	25% {width: 90%; margin-left: 10%;}
-	50% {width: 100%; margin-left: 20%}
-	75% {width: 120%; margin-left: 40%;}
-	100% {width: 110%; margin-left: 30%;}
+	0% {width: 110%;margin-right: 30%;}
+	25% {width: 90%; margin-right: 10%;}
+	50% {width: 100%; margin-right: 20%}
+	75% {width: 120%; margin-right: 40%;}
+	100% {width: 110%; margin-right: 30%;}
 }
 
 @keyframes ani_b3 {
