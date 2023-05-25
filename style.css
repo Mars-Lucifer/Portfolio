@@ -129,7 +129,7 @@ body {
 @keyframes ani_b2 {
 	0% {width: 110%;
 		margin-right: 30%;
-		background-color: #CCCCCC;
+		background-color: #FFFFFF;
 	}
 	25% {width: 80%;
 		margin-right: 0%;
@@ -141,11 +141,11 @@ body {
 	}
 	75% {width: 120%;
 		margin-right: 40%;
-		background-color: #CCCCCC;
+		background-color: #FFFFFF;
 	}
 	100% {width: 110%;
 		margin-right: 30%;
-		background-color: #CCCCCC;
+		background-color: #FFFFFF;
 	}
 }
 
@@ -444,4 +444,227 @@ body {
 	width: 8vh;
 	border-radius: 100%;
 	background-color: #6549F2;
+}
+
+
+/*Screen 3*/
+
+.button_port {
+	height: 10vh;
+	width: 100%;
+	font-size: 22px;
+	letter-spacing: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(300deg, #4D89FF, #2265E5);
+	border-radius: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin: 0px;
+	margin-bottom: 20px;
+	transition-duration: 400ms;
+}
+
+.button_port:hover {
+	height: 12vh;
+}
+
+.text__port-b {
+	margin: 0px;
+	margin-bottom: 10px;
+	font-size: 28px;
+	width: 100%;
+}
+
+.text__port-s {
+	margin: 0px;
+	font-size: 12px;
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+.port-end {
+	border-radius: 360px;
+	background: linear-gradient(300deg, #4D89FF, #2265E5);
+	width: 100%;
+	height: 10px;
+}
+
+.bp2 {
+	background: linear-gradient(300deg, #FF6433, #CC3100);
+}
+
+.bp3 {
+	background: linear-gradient(300deg, #000000, #4D4D4D);
+}
+
+/*Screen 4*/
+
+.about_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.box_about_cont {
+	background-color: #00041A;
+	box-shadow: 12px 12px 28px rgba(1, 5, 25, 0.15);
+	width: 60%;
+	height: 45vh;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.text__about-s {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+.but_about_flex {
+	width: 70%;
+	height: 70%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16%;
+}
+
+.links {
+	height: 74px;
+	width: 74px;
+	border-radius: 9px;
+	background-color: rgba(77, 137, 255, 0.1);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition-duration: 400ms;
+	border: rgba(77, 137, 255, 0.4) 2px solid;
+	display: flex;
+}
+
+.links:hover {
+	background-size: 70%;
+	background-color: rgba(77, 137, 255, 0.3);
+	border: #4D89FF 2px solid;
+}
+
+.l1 {background-image: url("img/logo 01.svg");}
+.l2 {background-image: url("img/logo 02.svg");}
+.l3 {background-image: url("img/logo 03.svg");}
+.l4 {background-image: url("img/logo 04.svg");}
+
+.my-form {
+	gap: 8%;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.pal2 {
+	position: absolute;
+	max-height: 130px;
+	width: 60%;
+	height: 35%;
+	border-radius: 360px;
+	background-color: red;
+	z-index: -1;
+}
+
+.pal2-1 {
+	background: linear-gradient(270deg, #4D89FF, #2E6CE5);
+	transform: rotate(-30deg);
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	animation-name: ani_pal2-1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.pal2-2 {
+	background: linear-gradient(270deg, #FFB54D, #FF9500);
+	transform: rotate(-40deg);
+	top: 20;
+	right: 50;
+	width: 70%;
+	animation-name: ani_pal2-2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.pal2-3 {
+	background: linear-gradient(270deg, #5639E5, #5865F2);
+	transform: rotate(30deg);
+	bottom: 50;
+	left: 0;
+	width: 40%;
+	animation-name: ani_pal2-3;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes ani_pal2-1 {
+	0% {
+		transform: rotate(-40deg);
+		bottom: 20%;
+		right: 0;
+	}
+	50% {
+		transform: rotate(-30deg);
+		bottom: 0%;
+		right: 0;
+	}
+	100% {
+		transform: rotate(-40deg);
+		bottom: 20%;
+		right: 0;
+	}
+}
+
+@keyframes ani_pal2-2 {
+	0% {
+		transform: rotate(-40deg);
+		top: 20%;
+		left: 10%;
+	}
+	50% {
+		transform: rotate(-45deg);
+		top: 30%;
+		left: 0%;
+	}
+	100% {
+		transform: rotate(-40deg);
+		top: 20%;
+		left: 10%;
+	}
+}
+
+@keyframes ani_pal2-3 {
+	0% {
+		transform: rotate(30deg);
+		bottom: 50%;
+		left: 0;
+	}
+	50% {
+		transform: rotate(0deg);
+		bottom: 10%;
+		left: 10%;
+	}
+	100% {
+		transform: rotate(30deg);
+		bottom: 50%;
+		left: 0;
+	}
 }
