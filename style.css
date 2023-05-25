@@ -8,9 +8,10 @@ body {
 }
 
 .screen {
-	height: 100vh;
-	margin-top: 10vh;
+	min-height: 100vh;
 }
+
+.s1 {padding-top: 12vh}
 
 .phone {
 	display: flex;
@@ -126,11 +127,26 @@ body {
 }
 
 @keyframes ani_b2 {
-	0% {width: 110%;margin-right: 30%;}
-	25% {width: 90%; margin-right: 10%;}
-	50% {width: 100%; margin-right: 20%}
-	75% {width: 120%; margin-right: 40%;}
-	100% {width: 110%; margin-right: 30%;}
+	0% {width: 110%;
+		margin-right: 30%;
+		background-color: #CCCCCC;
+	}
+	25% {width: 80%;
+		margin-right: 0%;
+		background-color: #FFFFFF;
+	}
+	50% {width: 90%;
+		margin-right: 10%;
+		background-color: #FFFFFF;
+	}
+	75% {width: 120%;
+		margin-right: 40%;
+		background-color: #CCCCCC;
+	}
+	100% {width: 110%;
+		margin-right: 30%;
+		background-color: #CCCCCC;
+	}
 }
 
 @keyframes ani_b3 {
@@ -219,4 +235,213 @@ body {
 .button:hover {
 	box-shadow: 16px 16px 32px rgba(1, 5, 25, 0.15);
 	transform: translateY(-6px);
+}
+
+
+/*Sreen 2*/
+
+.text__b {
+	margin-top: 6.6vh;
+	font-family: 'Poppins', sans-serif;
+	font-size: 42px;
+	line-height: 102.5%;
+}
+
+.text__s {
+	margin: 0px;
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #666666;
+	line-height: 135%;
+	margin-bottom: 10vh;
+}
+
+.boxi {
+	display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.boxi_content {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	border-radius: 16px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4%;
+    background-color: red;
+    gap: 20px;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1);
+    transition-duration: 450ms;
+}
+
+.boxi_content:hover {
+	transform: translateY(-14px);
+	box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bi1 {
+	background: linear-gradient(300deg, #000000, #333333);
+}
+
+.bi2 {
+	background-color: #2265E5;
+}
+
+.bi3 {
+	background-color: #5639E5;
+}
+
+.text__box-b {
+	font-family: 'Poppins', sans-serif;
+	font-size: 28px;
+	line-height: 102.5%;
+	color: #E6E6E6;
+	margin: 0px;
+	z-index: 1;
+}
+
+.text_box-s {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 135%;
+	color: #B3B3B3;
+	margin: 0px;
+	z-index: 1;
+}
+
+.price {
+	padding: 8px;
+	max-width: 40%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	line-height: 102.5%;
+	font-weight: 500;
+	margin: 0px;
+	z-index: 1;
+}
+
+.grey {
+	background-color: #333333;
+	color: #999999;
+}
+
+.blue {
+	background-color: #FFFFFF;
+	color: #2265E5;
+}
+
+.piople {
+	background-color: #FFFFFF;
+	color: #5639E5;
+}
+
+.order {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	line-height: 102.5%;
+	color: #E6E6E6;
+	margin: 0px;
+	margin-top: 26%;
+	padding-bottom: 6px;
+	max-width: 24%;
+	border-bottom: #E6E6E6 1px solid;
+	z-index: 1;
+	text-decoration: none;
+	transition-duration: 300ms;
+}
+
+.order:hover {
+	max-width: 36%;
+}
+
+.bac_box_1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	border-radius: 16px;
+	z-index: 0;
+}
+
+.bb_3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 70%;
+	height: 40%;
+	background-color: #2E6CE5;
+	border-radius: 16px 0px 16px 0px;
+	z-index: -1;
+}
+
+.bb_2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	height: 30%;
+	background-color: #3D7AF2;
+	border-radius: 16px 0px 16px 0px;
+	z-index: 0;
+}
+
+.bb_1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 35%;
+	height: 20%;
+	background-color: #4D89FF;
+	border-radius: 16px 0px 16px 0px;
+	z-index: 1;
+}
+
+.c_1 {
+	position: absolute;
+	top: 6%;
+	right: 8%;
+	height: 10vh;
+	width: 10vh;
+	border-radius: 100%;
+	background-color: #8066FF;
+}
+
+.c_2 {
+	position: absolute;
+	top: 4%;
+	left: 12%;
+	height: 14vh;
+	width: 14vh;
+	border-radius: 100%;
+	background-color: #8066FF;
+}
+
+.c_3 {
+	position: absolute;
+	top: 54%;
+	right: 16%;
+	height: 10vh;
+	width: 10vh;
+	border-radius: 100%;
+	background-color: #6549F2;
+}
+
+.c_4 {
+	position: absolute;
+	bottom: 10%;
+	left: 30%;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 100%;
+	background-color: #6549F2;
 }
