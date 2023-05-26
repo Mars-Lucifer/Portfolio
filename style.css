@@ -686,8 +686,6 @@ body {
 	.s1 {padding-top: 0px}
 	.button {margin-bottom: 10vh}
 	.b2 {animation-name: none; margin: 0px; width: 80%}
-	.pal-01 {width: 90%}
-	.pal-02 {width: 90%}
 	.bac__phone {width: 90%; height: 75%}
 	@keyframes ani_b3 {
 		0% {
@@ -736,11 +734,21 @@ body {
 	}
 
 	.boxi {margin-bottom: 4vh}
+	.box_about_cont {width: 80%}
+	.links {height: 66px; width: 66px}
 }
 
 @media (max-width: 768px) {
 	.button {margin-bottom: 16vh}
 	.screen {padding-top: 10%}
+	.footer {padding: 0px;}
+	.text__footer {font-size: 10px}
+	.pal-01 {width: 90%}
+	.pal-02 {width: 90%}
+
+	.pal2 {
+		display: none;
+	}
 }
 
 @media (max-width: 992px) {
