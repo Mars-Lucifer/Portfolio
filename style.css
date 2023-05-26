@@ -686,8 +686,8 @@ body {
 	.s1 {padding-top: 0px}
 	.button {margin-bottom: 10vh}
 	.b2 {animation-name: none; margin: 0px; width: 80%}
-	.pal-01 {width: 100%}
-	.pal-02 {width: 100%}
+	.pal-01 {width: 90%}
+	.pal-02 {width: 90%}
 	.bac__phone {width: 90%; height: 75%}
 	@keyframes ani_b3 {
 		0% {
@@ -734,4 +734,10 @@ body {
 			height: 100%;
 		}
 	}
+
+	.boxi {margin-bottom: 4vh}
+}
+
+@media (max-width: 768px) {
+	.button {margin-bottom: 16vh}
 }
