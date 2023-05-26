@@ -679,3 +679,59 @@ body {
 .text__footer:hover {
 	border-bottom: rgba(77, 137, 255, 1.0) 2px solid;
 }
+
+
+
+@media (max-width: 425px) {
+	.s1 {padding-top: 0px}
+	.button {margin-bottom: 10vh}
+	.b2 {animation-name: none; margin: 0px; width: 80%}
+	.pal-01 {width: 100%}
+	.pal-02 {width: 100%}
+	.bac__phone {width: 90%; height: 75%}
+	@keyframes ani_b3 {
+		0% {
+			background-color: #FFFFFF;
+			height: 120%;
+		}
+		25% {
+			background-color: #FFFFFF;
+			height: 130%;
+		}
+		50% {
+			background-color: #CCCCCC;
+			height: 80%;
+		}
+		75% {
+			background-color: #CCCCCC;
+			height: 100%;
+		}
+		100% {
+			background-color: #FFFFFF;
+			height: 120%;
+		}
+	}
+	@keyframes ani_b4 {
+		0% {
+			background-color: #CCCCCC;
+			height: 100%;
+		}
+		25% {
+			background-color: #CCCCCC;
+			height: 80%;
+			margin-bottom: 20%;
+		}
+		50% {
+			background-color: #FFFFFF;
+			height: 110%;
+		}
+		75% {
+			background-color: #FFFFFF;
+			height: 100%;
+		}
+		100% {
+			background-color: #CCCCCC;
+			height: 100%;
+		}
+	}
+}
