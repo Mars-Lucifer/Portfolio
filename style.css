@@ -740,4 +740,10 @@ body {
 
 @media (max-width: 768px) {
 	.button {margin-bottom: 16vh}
+	.screen {padding-top: 10%}
+}
+
+@media (max-width: 992px) {
+	.box__port {margin-bottom: 12vh}
+	.port-end {height: 4px}
 }
