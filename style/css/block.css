@@ -57,6 +57,7 @@ footer {
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .text-block {
