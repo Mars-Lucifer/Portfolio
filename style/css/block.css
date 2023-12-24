@@ -1,0 +1,35 @@
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 0px 80px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-block-1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {padding: 0px 40px;}
+}
+
+@media (max-width: 425px) {
+    .container {padding: 0px 20px;}
+}
