@@ -1,3 +1,30 @@
 .logo-icon {
     height: 35px;
 }
+
+.photo {
+    border-radius: 36px;
+    height: 200px;
+    box-shadow: 12px 12px 20px 0px rgba(152, 72, 62, 0.10);
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    transition: filter 0.3s;
+}
+.big-block:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .photo {
+        height: 160px;
+    }
+}
+
+@media (max-width: 425px) {
+    .photo {
+        height: 140px;
+    }
+}
