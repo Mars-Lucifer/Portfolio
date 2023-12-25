@@ -160,7 +160,7 @@ footer {
 
 @media (max-width: 425px) {
     .big-block {
-        min-height: none;
+        min-height: fit-content;
         background-position: 100% 270%;
     }
     header {
