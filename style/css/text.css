@@ -46,6 +46,18 @@ p {
     font-size: 1.6rem;
 }
 
+.mark {
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--violet);
+    backdrop-filter: blur(6px);
+    align-self: flex-start;
+}
+
+.m1 {background: var(--violet);}
+.m2 {background: var(--blue);}
+.m3 {background: var(--green);}
+
 @media (max-width: 1024px) {
     html {font-size: 8px;}
 }

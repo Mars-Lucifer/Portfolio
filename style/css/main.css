@@ -11,6 +11,10 @@ body, html {
 
 :root {
     --black: #14161A;
+    --violet: rgba(112, 20, 204, 0.30);
+    --blue: rgba(20, 88, 204, 0.30);
+    --green: rgba(51, 204, 20, 0.30);
+    --gray: rgba(20, 22, 26, 0.30);
 }
 
 @keyframes appearance {

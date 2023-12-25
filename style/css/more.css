@@ -17,6 +17,36 @@
     filter: brightness(0) invert(1);
 }
 
+.arrow {
+    height: 35px;
+}
+
+/* Изображения с тенями */
+.back-1 {
+    background-image: url("/style/img/img 01.svg");
+    box-shadow: 8px 8px 16px 0px rgba(236, 73, 138, 0.10);
+}
+.back-2 {
+    background-image: url("/style/img/img 02.svg");
+    box-shadow: 8px 8px 16px 0px rgba(111, 26, 85, 0.10);
+}
+.back-3 {
+    background-image: url("/style/img/img 03.svg");
+    box-shadow: 8px 8px 16px 0px rgba(255, 191, 61, 0.10);
+}
+.back-4 {
+    background-image: url("/style/img/img 05.svg");
+    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
+}
+.back-5 {
+    background-image: url("/style/img/img 06.svg");
+    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
+}
+.back-6 {
+    background-image: url("/style/img/img 09.svg");
+    box-shadow: 8px 8px 16px 0px rgba(104, 116, 226, 0.10);
+}
+
 @media (max-width: 768px) {
     .photo {
         height: 160px;
