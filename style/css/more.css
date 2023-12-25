@@ -16,6 +16,9 @@
 .big-block:hover .icon {
     filter: brightness(0) invert(1);
 }
+.static .icon {
+    filter: brightness(0) invert(1);
+}
 
 .arrow {
     height: 35px;

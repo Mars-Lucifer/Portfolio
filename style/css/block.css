@@ -79,7 +79,7 @@ footer {
     gap: 26px;
     padding: 22px 26px;
     background-repeat: no-repeat;
-    background-position: 100% 150%;
+    background-position: 100% 170%;
     transition-duration: 400ms;
     overflow: hidden;
 }
@@ -103,9 +103,20 @@ footer {
     color: white;
     background-position: 100% 110%;
 }
-.b01:hover {background-image: url(/style/img/01.svg);}
-.b02:hover {background-image: url(/style/img/02.svg);}
-.b03:hover {background-image: url(/style/img/03.svg);}
+.b01 {background-image: url(/style/img/01.svg);}
+.b02 {background-image: url(/style/img/02.svg);}
+.b03 {background-image: url(/style/img/03.svg);}
+
+.static {
+    background-color: var(--black);
+    box-shadow: 12px 12px 20px 0px rgba(20, 22, 25, 0.10);
+    background-position: 100% 110%;
+    color: white;
+}
+.static::after {
+    content: "";
+    display: none;
+}
 
 .block-work {
     height: 250px;
