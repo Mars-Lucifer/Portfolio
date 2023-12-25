@@ -46,6 +46,18 @@
     background-image: url("/style/img/img 09.svg");
     box-shadow: 8px 8px 16px 0px rgba(104, 116, 226, 0.10);
 }
+.back-github {
+    background-image: url("/style/img/img 04.png");
+    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
+}
+.back-7 {
+    background-image: url("/style/img/img 07.svg");
+    box-shadow: 8px 8px 16px 0px rgba(127, 144, 159, 0.10);
+}
+.back-8 {
+    background-image: url("/style/img/img 08.svg");
+    box-shadow: 8px 8px 16px 0px rgba(121, 126, 124, 0.10);
+}
 
 @media (max-width: 768px) {
     .photo {
