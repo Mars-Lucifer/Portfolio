@@ -159,6 +159,10 @@ footer {
 }
 
 @media (max-width: 425px) {
+    .big-block {
+        min-height: none;
+        background-position: 100% 270%;
+    }
     header {
         flex-direction: column;
         gap: 10px;
