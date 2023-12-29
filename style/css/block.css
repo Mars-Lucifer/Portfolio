@@ -171,7 +171,15 @@ footer {
     .container {padding: 0px 40px;}
 }
 
+<<<<<<< HEAD
 @media (max-width: 426px) {
+=======
+@media (max-width: 425px) {
+    .big-block {
+        min-height: fit-content;
+        background-position: 100% 270%;
+    }
+>>>>>>> fb8c08707ad536bbda1b20586182ee7a5cfd7774
     header {
         flex-direction: column;
         gap: 10px;
@@ -179,6 +187,7 @@ footer {
     .header-block-1 {width: 100%; justify-content: center; gap: 20px;}
     .max-50 {max-width: 100%;}
     .content-block-1 {gap: 20px;}
+<<<<<<< HEAD
     .content-block-2 {justify-content: center; gap: 12px;}
     .container {padding: 0px 40px;}
     .big-block {
@@ -204,3 +213,8 @@ footer {
     .column {flex-direction: column;}
     .flex-center {align-items: center;}
 }
+=======
+    .content-block-2 {justify-content: center;}
+    .container {padding: 0px 20px;}
+}
+>>>>>>> fb8c08707ad536bbda1b20586182ee7a5cfd7774
