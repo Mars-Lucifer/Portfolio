@@ -83,6 +83,8 @@ p {
     p {font-size: 12px;}
 
     .mini-text {font-size: 12px;}
+}
 
+@media (max-width: 321px) {
     .center {text-align: center;}
 }
