@@ -15,36 +15,38 @@ p, h1, h2, h3, h4, h5, h6, a {
 .gray {color: rgba(255, 255, 255, 0.5);}
 
 .logo-text {
-    font-size: 3.2rem;
+    font-size: 32px;
     font-weight: 800;
     letter-spacing: 0.96px;
 }
 
 a {
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     color: var(--black);
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 38px;
     font-weight: 700;
 }
 
 h4 {
-    font-size: 2.8rem;
+    font-size: 28px;
     font-weight: 600;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .mini-text {
-    font-size: 1.6rem;
+    font-size: 16px;
 }
+
+.center {text-align: left;}
 
 .mark {
     padding: 6px 14px;
@@ -58,9 +60,29 @@ p {
 .m2 {background: var(--blue);}
 .m3 {background: var(--green);}
 
-@media (max-width: 1024px) {
-    html {font-size: 8px;}
+@media (max-width: 769px) {
+    a {font-size: 16px;}
+
+    h1 {font-size: 22px;}
+
+    h4 {font-size: 16px;}
+
+    p {font-size: 12px;}
+
+    .mini-text {font-size: 12px;}
 }
-@media (max-width: 425px) {
-    html {font-size: 6px;}
+@media (max-width: 426px) {
+    .logo-text {font-size: 30px;}
+
+    a {font-size: 16px;}
+
+    h1 {font-size: 22px;}
+
+    h4 {font-size: 20px;}
+
+    p {font-size: 12px;}
+
+    .mini-text {font-size: 12px;}
+
+    .center {text-align: center;}
 }

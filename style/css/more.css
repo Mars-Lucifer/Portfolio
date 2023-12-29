@@ -62,14 +62,17 @@
     box-shadow: 8px 8px 16px 0px rgba(121, 126, 124, 0.10);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .photo {
         height: 160px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .photo {
         height: 140px;
+    }
+    .arrow {
+        height: 25px;
     }
 }

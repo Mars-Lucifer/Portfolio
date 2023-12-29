@@ -8,6 +8,9 @@ body, html {
     animation-name: appearance;
     animation-duration: 1s;
 }
+*::selection {
+    background: #4087FF46;
+}
 
 :root {
     --black: #14161A;
