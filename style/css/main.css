@@ -3,6 +3,10 @@ body, html {
     padding: 0;
 }
 
+body {
+    background-color: white;
+}
+
 * {
     box-sizing: border-box;
     animation-name: appearance;
