@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luci's clicker</title>
+    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            <h2>Кликер от Luci</h2>
+            <button onclick="opens()">Награды <img src="./style/img/arrow.svg" alt="arrow"></button>
+        </div>
+
+        <button id="skeleton" onclick="skeletonClick()" class="skeleton-but none-opacity">
+            <img src="./style/img/skeleton.svg" alt="skeleton">
+        </button>
+
+        <h1 id="counter">0</h1>
+    </div>
+
+    <div class="container more" id="block-1">
+        <button onclick="closes()" class="awards-box center none-opacity gray">
+            <p class="awards-title">Выход</p>
+        </button>
+
+        <div class="awards-box yellow">
+            <p class="awards-title">Случайное предсказание</p>
+            <p class="awards-num">50</p>
+        </div>
+    </div>
+
+    <div class="container more awards" id="block-2">
+        <div class="awards-box center green">
+            <p class="awards-title" id="awards-text">Случайное предсказание</p>
+        </div>
+
+        <button onclick="closesTwo()" class="awards-box center none-opacity gray">
+            <p class="awards-title">Выход</p>
+        </button>
+    </div>
+
+    <script src="./scripts.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 200);
+        });
+    </script>
+</body>
+</html>
