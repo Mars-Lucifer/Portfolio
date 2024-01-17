@@ -49,7 +49,7 @@ function skeletonClick() {
         localStorage.setItem('balanceCookie', Number(balance));
         // Проверка
         switch(balance) {
-            case 66:
+            case 100:
                 Block2.style.display = "flex";
                 rand()
                 break;
