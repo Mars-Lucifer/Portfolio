@@ -10,6 +10,15 @@ let awards = [
     "Денчик лох"
 ];
 
+let balance
+if (localStorage.getItem('balanceCookie') != null) {
+    balance = String(localStorage.getItem('balanceCookie'));
+} else {
+    balance = '0';
+}
+
+Counter.innerText = balance;
+
 function opens() {
     Block1.style.display = "flex";
 }
@@ -27,17 +36,17 @@ function rand() {
     Text.innerText = answer;
 }
 
-let progress = false;
-let balance = 0;
-
 function skeletonClick() {
+    let progress = false;
     if (!progress) {
+        balance = Number(localStorage.getItem('balanceCookie'));
         // Статус 1
         progress = true;
 
         // Баланс
         balance += 1;
         Counter.innerText = balance;
+        localStorage.setItem('balanceCookie', Number(balance));
         // Проверка
         switch(balance) {
             case 66:
@@ -57,4 +66,9 @@ function skeletonClick() {
         // Статус 2
         progress = false;
     }
+}
+
+function deleteCookie() {
+    localStorage.setItem('balanceCookie', 0);
+    location.reload();
 }

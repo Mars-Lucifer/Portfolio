@@ -161,9 +161,14 @@ h1 {
 
 .center {text-align: center; justify-content: center;}
 
-.yellow {
+.red {
     background-color: #4D0F08;
     color: #E56A5C;
+}
+
+.yellow {
+    background-color: #665600;
+    color: #CCAF14;
 }
 
 .gray {
