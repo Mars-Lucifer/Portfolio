@@ -26,39 +26,39 @@
 
 /* Изображения с тенями */
 .back-1 {
-    background-image: url("/static/style/img/01.svg");
+    background-image: url("/static/style/img/img%2001.svg");
     box-shadow: 8px 8px 16px 0px rgba(236, 73, 138, 0.10);
 }
 .back-2 {
-    background-image: url("/static/style/img/img 02.svg");
+    background-image: url("/static/style/img/img%2002.svg");
     box-shadow: 8px 8px 16px 0px rgba(111, 26, 85, 0.10);
 }
 .back-3 {
-    background-image: url("/static/style/img/img 03.svg");
+    background-image: url("/static/style/img/img%2003.svg");
     box-shadow: 8px 8px 16px 0px rgba(255, 191, 61, 0.10);
 }
 .back-4 {
-    background-image: url("/static/style/img/img 05.svg");
+    background-image: url("/static/style/img/img%2005.svg");
     box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
 }
 .back-5 {
-    background-image: url("/static/style/img/img 06.svg");
+    background-image: url("/static/style/img/img%2006.svg");
     box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
 }
 .back-6 {
-    background-image: url("/static/style/img/img 09.svg");
+    background-image: url("/static/style/img/img%2009.svg");
     box-shadow: 8px 8px 16px 0px rgba(104, 116, 226, 0.10);
 }
 .back-github {
-    background-image: url("/static/style/img/img 04.png");
+    background-image: url("/static/style/img/img%2004.png");
     box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
 }
 .back-7 {
-    background-image: url("/static/style/img/img 07.svg");
+    background-image: url("/static/style/img/img%2007.svg");
     box-shadow: 8px 8px 16px 0px rgba(127, 144, 159, 0.10);
 }
 .back-8 {
-    background-image: url("/static/style/img/img 08.svg");
+    background-image: url("/static/style/img/img%2008.svg");
     box-shadow: 8px 8px 16px 0px rgba(121, 126, 124, 0.10);
 }
 
