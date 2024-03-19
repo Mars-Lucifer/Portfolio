@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Mars Lucifer{% endblock %}
+
+{% block body %}
+<div class="container h100">
+    <div class="content">
+        <div class="content-block-1 nowrap">
+            <img src="static/style/img/hu-tao.jpg" alt="Hu Tao" class="photo">
+            <div class="text-block max-50">
+                <h1>Привет! Это мое портфолио</h1>
+                <p>Здесь вы можете найти все, что вам нужно обо мне. Например, мои работы, контакты, проекты и так далее. Надеюсь, вы найдете то, что вам нужно!</p>
+            </div>
+        </div>
+        <h1 class="center">Все это вы можете найти в разделах:</h1>
+        <div class="content-block-2">
+            <a class="big-block b01" href="/design">
+                <img src="static/style/img/icon 03.svg" alt="icon 1" class="icon">
+                <div class="text-block">
+                    <h4>Дизайнерские работы</h4>
+                    <p class="mini-text">Здесь вы можете увидеть мои дизайнерские работы, такие как сайты или презентации</p>
+                </div>
+            </a>
+            <a class="big-block b02" href="/develop">
+                <img src="static/style/img/icon 04.svg" alt="icon 2" class="icon">
+                <div class="text-block">
+                    <h4>Работы из разработки</h4>
+                    <p class="mini-text">Вы также можете посмотреть сайты, над которыми я работал</p>
+                </div>
+            </a>
+            <a class="big-block b03" href="/services">
+                <img src="static/style/img/icon 05.svg" alt="icon 3" class="icon">
+                <div class="text-block">
+                    <h4>Мои услуги</h4>
+                    <p class="mini-text">Заинтересовались? Тогда посмотрим, что я могу для вас сделать! Вам понравится</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/style/img/favicon.svg">
+    <title>Mars Lucifer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/css/main.css') }}">
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <header class="container">
+        <a class="logo" href="/">
+            <img src="static/style/img/icon 1 - blue.svg" alt="skeleton icon" class="logo-icon">
+            <p class="logo-text">Mars Lucifer</p>
+        </a>
+        <div class="header-block-1">
+            <a target="_blank" href="https://t.me/Mars_Lucifer">Напишите мне</a>
+            <a target="_blank" href="https://github.com/Mars-Lucifer">GitHub</a>
+            <a target="_blank" href="https://dribbble.com/Mars_Lucifer">Dribbble</a>
+        </div>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer class="container column">
+        <div class="block-footer-1 flex-center">
+            <h4 class="white center">Контакты</h4>
+            <a class="gray center">marslucifer@yandex.ru</a>
+            <a target="_blank" href="https://t.me/Mars_Lucifer" class="gray center">Telegram</a>
+            <a target="_blank" href="https://vk.com/mars_lucifer" class="gray center">VK</a>
+        </div>
+        <div class="block-footer-1 flex-center">
+            <h4 class="white center">Мои проекты</h4>
+            <a target="_blank" href="https://minoko-site.vercel.app/" class="gray center">Minoko - Discord сервер</a>
+            <a target="_blank" href="https://github.com/Mars-Lucifer/Aurora" class="gray center">Aurora - голосовой ассистент</a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 200);
+        });
+    </script>
+</body>
+</html>
