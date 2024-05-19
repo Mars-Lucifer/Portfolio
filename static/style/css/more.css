@@ -1,13 +1,16 @@
+/* Logo Icon */
 .logo-icon {
     height: 35px;
 }
 
+/* Photo */
 .photo {
     border-radius: 36px;
     height: 200px;
     box-shadow: 12px 12px 20px 0px rgba(152, 72, 62, 0.10);
 }
 
+/* Icon */
 .icon {
     height: 60px;
     width: 60px;
@@ -20,48 +23,88 @@
     filter: brightness(0) invert(1);
 }
 
+/* Arrow */
 .arrow {
     height: 35px;
 }
 
-/* Изображения с тенями */
-.back-1 {
-    background-image: url("/static/style/img/img01.svg");
-    box-shadow: 8px 8px 16px 0px rgba(236, 73, 138, 0.10);
-}
-.back-2 {
-    background-image: url("/static/style/img/img02.svg");
-    box-shadow: 8px 8px 16px 0px rgba(111, 26, 85, 0.10);
-}
-.back-3 {
-    background-image: url("/static/style/img/img03.svg");
-    box-shadow: 8px 8px 16px 0px rgba(255, 191, 61, 0.10);
-}
-.back-4 {
-    background-image: url("/static/style/img/img05.svg");
-    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
-}
-.back-5 {
-    background-image: url("/static/style/img/img06.svg");
-    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
-}
-.back-6 {
-    background-image: url("/static/style/img/img09.svg");
-    box-shadow: 8px 8px 16px 0px rgba(104, 116, 226, 0.10);
-}
-.back-github {
-    background-image: url("/static/style/img/img04.png");
-    box-shadow: 8px 8px 16px 0px rgba(11, 13, 18, 0.10);
-}
-.back-7 {
-    background-image: url("/static/style/img/img07.svg");
-    box-shadow: 8px 8px 16px 0px rgba(127, 144, 159, 0.10);
-}
-.back-8 {
-    background-image: url("/static/style/img/img08.svg");
-    box-shadow: 8px 8px 16px 0px rgba(121, 126, 124, 0.10);
+/* Button */
+.button {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background-color: var(--black);
+    border-radius: 100px;
+    padding: 14px 32px;
+    color: var(--white-gray);
 }
 
+.completed-menu {
+    display: none;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #223D18;
+    border-radius: 24px;
+    animation-name: spawn-bcm;
+    animation-duration: 3200ms;
+    z-index: 3;
+}
+.completed-menu * {
+    animation-name: spawn-bcm;
+    animation-duration: 3200ms;
+    z-index: 3;
+}
+
+@keyframes spawn-bcm {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Background Images */
+.back-1::before {
+    background-image: url("/static/style/img/img01.svg");
+}
+.back-2::before {
+    background-image: url("/static/style/img/img02.svg");
+}
+.back-3::before {
+    background-image: url("/static/style/img/img03.svg");
+}
+.back-4::before {
+    background-image: url("/static/style/img/img05.svg");
+}
+.back-5::before {
+    background-image: url("/static/style/img/img06.svg");
+}
+.back-6::before {
+    background-image: url("/static/style/img/img09.svg");
+}
+.back-github::before {
+    background-image: url("/static/style/img/img04.png");
+}
+.back-7::before {
+    background-image: url("/static/style/img/img07.svg");
+}
+.back-8::before {
+    background-image: url("/static/style/img/img08.svg");
+}
+.back-11::before {
+    background-image: url("/static/style/img/img11.svg");
+}
+
+/* Media Queries */
 @media (max-width: 769px) {
     .photo {
         height: 160px;

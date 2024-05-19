@@ -1,5 +1,7 @@
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Base Styles */
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -11,9 +13,18 @@ p, h1, h2, h3, h4, h5, h6, a {
     line-height: 130%;
 }
 
-.white {color: white;}
-.gray {color: rgba(255, 255, 255, 0.5);}
+/* Color Classes */
+.white {
+    color: white;
+}
+.gray {
+    color: rgba(255, 255, 255, 0.5);
+}
+.black-gray {
+    color: #96A1B2;
+}
 
+/* Text Styles */
 .logo-text {
     font-size: 32px;
     font-weight: 800;
@@ -32,8 +43,13 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 h4 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
 }
 
@@ -46,45 +62,118 @@ p {
     font-size: 16px;
 }
 
-.center {text-align: left;}
-
-.mark {
-    padding: 6px 14px;
-    border-radius: 100px;
-    background: var(--violet);
-    backdrop-filter: blur(6px);
-    align-self: flex-start;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -4px;
+    margin-left: 4px;
 }
 
-.m1 {background: var(--violet);}
-.m2 {background: var(--blue);}
-.m3 {background: var(--green);}
+ul li {
+    position: relative;
+    margin-top: 8px;
+    padding-left: 22px;
+}
+ul:first-child {
+    margin: 0;
+}
+
+ul li::before {
+    content: '';
+    height: 8px;
+    aspect-ratio: 1;
+    background-color: #96A1B2;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Text Alignment */
+.center {
+    text-align: left;
+}
+
+/* More Styles */
+#email {
+    cursor: pointer;
+}
+
+/* Media Queries for Smooth Text Size Transition */
+@media (max-width: 1024px) {
+    a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .mini-text {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 769px) {
-    a {font-size: 16px;}
+    a {
+        font-size: 16px;
+    }
 
-    h1 {font-size: 22px;}
+    h1 {
+        font-size: 28px;
+    }
 
-    h4 {font-size: 16px;}
+    h4 {
+        font-size: 20px;
+    }
 
-    p {font-size: 12px;}
+    p {
+        font-size: 16px;
+    }
 
-    .mini-text {font-size: 12px;}
+    .mini-text {
+        font-size: 12px;
+    }
 }
+
 @media (max-width: 426px) {
-    .logo-text {font-size: 30px;}
+    .logo-text {
+        font-size: 30px;
+    }
 
-    a {font-size: 16px;}
+    a {
+        font-size: 14px;
+    }
 
-    h1 {font-size: 22px;}
+    h1 {
+        font-size: 22px;
+    }
 
-    h4 {font-size: 20px;}
+    h4 {
+        font-size: 20px;
+    }
 
-    p {font-size: 12px;}
+    p {
+        font-size: 14px;
+    }
 
-    .mini-text {font-size: 12px;}
+    .mini-text {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 321px) {
-    .center {text-align: center;}
+    .center {
+        text-align: center;
+    }
 }

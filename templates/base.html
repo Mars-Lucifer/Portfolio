@@ -9,13 +9,17 @@
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
+    <div class="button completed-menu" id="bcm">
+        <img src="/static/style/img/complete.svg" alt="complete">
+        <p>Скопировано в буфер</p>
+    </div>
     <header class="container">
         <a class="logo" href="/">
             <img src="/static/style/img/icon1-blue.svg" alt="skeleton icon" class="logo-icon">
             <p class="logo-text">Mars Lucifer</p>
         </a>
         <div class="header-block-1">
-            <a target="_blank" href="https://t.me/Mars_Lucifer">Напишите мне</a>
+            <a target="_blank" href="https://t.me/Mars_Lucifer">Send me</a>
             <a target="_blank" href="https://github.com/Mars-Lucifer">GitHub</a>
             <a target="_blank" href="https://dribbble.com/Mars_Lucifer">Dribbble</a>
         </div>
@@ -23,10 +27,10 @@
 
     {% block body %}{% endblock %}
 
-    <footer class="container column">
+    <footer class="container column" style="margin-top: 60px;">
         <div class="block-footer-1 flex-center">
             <h4 class="white center">Контакты</h4>
-            <a class="gray center">marslucifer@yandex.ru</a>
+            <a class="gray center" id="email">marslucifer@yandex.ru</a>
             <a target="_blank" href="https://t.me/Mars_Lucifer" class="gray center">Telegram</a>
             <a target="_blank" href="https://vk.com/mars_lucifer" class="gray center">VK</a>
         </div>
@@ -37,12 +41,6 @@
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-            }, 200);
-        });
-    </script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
