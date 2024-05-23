@@ -4,13 +4,15 @@ window.addEventListener('load', function() {
     }, 200);
 });
 
-document.getElementById("email").addEventListener("click", function() {
-    let email = this.textContent.trim();
-    navigator.clipboard.writeText(email)
+document.querySelectorAll("[data-copy]").forEach(function(element) {
+    element.addEventListener("click", function() {
+        let cont = this.getAttribute('content').trim();
+        navigator.clipboard.writeText(cont);
 
-    let bcmElement = document.getElementById("bcm");
-    bcmElement.style.display = "flex";
-    setTimeout(function() {
-        bcmElement.style.display = "none";
-    }, 3200);
+        let bcmElement = document.getElementById("bcm");
+        bcmElement.style.display = "flex";
+        setTimeout(function() {
+            bcmElement.style.display = "none";
+        }, 3200);
+    });
 });

@@ -97,7 +97,7 @@ ul li::before {
 }
 
 /* More Styles */
-#email {
+a {
     cursor: pointer;
 }
 

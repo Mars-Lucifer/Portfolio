@@ -3,11 +3,17 @@
     height: 35px;
 }
 
-/* Photo */
+/* Img */
 .photo {
-    border-radius: 36px;
     height: 200px;
-    box-shadow: 12px 12px 20px 0px rgba(152, 72, 62, 0.10);
+    /* box-shadow: 12px 12px 20px 0px rgba(152, 72, 62, 0.10); */
+}
+
+.img-1 {
+    width: calc(50% - 20px);
+    height: 260px;
+    border-radius: 36px;
+    object-fit: cover;
 }
 
 /* Icon */
@@ -23,6 +29,66 @@
     filter: brightness(0) invert(1);
 }
 
+.icon-green {
+    fill: #96A1B2;
+    animation-name: icon-blue-spawn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    
+}
+.block-serv .block-serv__mini:nth-child(3) .icon-green {
+    animation-delay: 0.6s;
+}
+.block-serv .block-serv__mini:nth-child(4) .icon-green {
+    animation-delay: 0.9s;
+}
+.block-serv .block-serv__mini:nth-child(5) .icon-green {
+    animation-name: icon-green-spawn;
+    animation-delay: 1.2s;
+}
+
+@keyframes icon-green-spawn {
+    0% {
+        scale: 1;
+        rotate: 0;
+    }
+    25% {
+        scale: 0.8;
+        rotate: 35deg;
+    }
+    50% {
+        scale: 1.1;
+        rotate: -20deg;
+        fill: #52B22E;
+    }
+    100% {
+        scale: 1;
+        rotate: 0;
+        fill: #52B22E;
+    }
+}
+
+@keyframes icon-blue-spawn {
+    0% {
+        scale: 1;
+        rotate: 0;
+    }
+    25% {
+        scale: 0.8;
+        rotate: 35deg;
+    }
+    50% {
+        scale: 1.1;
+        rotate: -20deg;
+        fill: #1D85E5;
+    }
+    100% {
+        scale: 1;
+        rotate: 0;
+        fill: #1D85E5;
+    }
+}
+
 /* Arrow */
 .arrow {
     height: 35px;
@@ -33,10 +99,22 @@
     display: flex;
     gap: 6px;
     align-items: center;
+    justify-content: center;
     background-color: var(--black);
     border-radius: 100px;
     padding: 14px 32px;
     color: var(--white-gray);
+}
+
+.button.block-serv__mini {
+    min-height: 64px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 100ms;
+    background-color: var(--black);
+}
+.button.block-serv__mini:active {
+    background-color: #223D18;
 }
 
 .completed-menu {
@@ -105,9 +183,13 @@
 }
 
 /* Media Queries */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .photo {
         height: 160px;
+    }
+    .img-1 {
+        height: 220px;
+        width: 100%;
     }
 }
 

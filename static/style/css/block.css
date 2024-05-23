@@ -1,8 +1,10 @@
 /* Container */
 .container {
     height: 100%;
+    max-width: 1920px;
     width: 100%;
     padding: 0px 80px;
+    margin: auto;
 }
 
 /* Header */
@@ -32,14 +34,15 @@ header {
 
 /* Footer */
 footer {
+    max-width: none !important;
     background-color: var(--black);
     display: flex;
     gap: 120px;
-    min-height: 30vh;
+    padding: 0 max(calc((100% - 1920px) / 2 + 80px), 80px) !important;
 }
 
 .block-footer-1 {
-    padding: 20px 0px;
+    padding: 40px 0px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -216,6 +219,13 @@ footer {
     background-color: var(--white-gray);
 }
 
+.block-serv__mini {
+    width: 100%;
+    background-color: white;
+    border-radius: 24px;
+    flex-direction: row;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .block-work {
@@ -227,6 +237,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+    footer {
+        padding: 0 max(calc((100% - 1920px) / 2 + 80px), 40px) !important;
+    }
     .header-block-1 {
         width: 90%;
         justify-content: space-between;
@@ -238,9 +254,6 @@ footer {
     .container {
         padding: 0px 40px;
     }
-}
-
-@media (max-width: 640px) {
     .block-serv {
         width: 100%;
     }
@@ -256,6 +269,9 @@ footer {
         justify-content: center;
         gap: 20px;
     }
+    .block-footer-1 {
+        padding: 20px 0;
+    }
     .max-50 {
         max-width: 100%;
     }
@@ -264,10 +280,10 @@ footer {
     }
     .content-block-2 {
         justify-content: center;
-        gap: 12px;
+        gap: 14px;
     }
     .container {
-        padding: 0px 40px;
+        padding: 0px 14px;
     }
     .big-block {
         width: 100%;
@@ -286,6 +302,9 @@ footer {
     .block-work {
         width: 100%;
         aspect-ratio: none;
+    }
+    .block-serv {
+        gap: 12px;
     }
     .content-block-2 {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));

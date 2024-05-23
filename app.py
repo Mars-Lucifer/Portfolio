@@ -14,5 +14,9 @@ def design():
 def services():
     return render_template("services.html")
 
+@app.route('/referral')
+def referral():
+    return render_template("referral.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
