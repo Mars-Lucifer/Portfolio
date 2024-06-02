@@ -3,7 +3,7 @@
     height: 100%;
     max-width: 1920px;
     width: 100%;
-    padding: 0px 80px;
+    padding: 0px 160px;
     margin: auto;
 }
 
@@ -38,7 +38,7 @@ footer {
     background-color: var(--black);
     display: flex;
     gap: 120px;
-    padding: 0 max(calc((100% - 1920px) / 2 + 80px), 80px) !important;
+    padding: 0 max(calc((100% - 1920px) / 2 + 160px), 160px) !important;
 }
 
 .block-footer-1 {
@@ -286,9 +286,11 @@ footer {
         padding: 0px 14px;
     }
     .big-block {
+        flex-direction: row;
+        align-items: center;
         width: 100%;
-        min-height: 200px;
-        background-position-y: 300%;
+        min-height: 140px;
+        background-position-y: 600%;
     }
     .big-block::after {
         background-color: var(--white-gray);
